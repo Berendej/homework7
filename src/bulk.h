@@ -71,7 +71,8 @@ public:
     void add(sp_cmd_t &sp_cmd)
     {
         m_commands.push_back(sp_cmd);
-        if ( N == m_commands.size() )
+        if ( (0 == m_depth) and 
+             (N == m_commands.size()) )
         {
             drop();
         }
