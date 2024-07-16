@@ -37,7 +37,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./homewok7-0.1.${{ github.run_number }}-Linux.deb
-          asset_name: homewok7-0.1.${{ github.run_number }}-Linux.deb
+          asset_path: ./homework7-0.1.${{ github.run_number }}-Linux.deb
+          asset_name: homework7-0.1.${{ github.run_number }}-Linux.deb
           asset_content_type: application/vnd.debian.binary-package
 
